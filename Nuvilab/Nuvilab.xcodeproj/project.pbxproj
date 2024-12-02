@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		D4DD13882CFDEF9200243004 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = D4DD13872CFDEF9200243004 /* Moya */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		D4DD13522CFDEC1C00243004 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -29,12 +33,17 @@
 		D4DD135B2CFDEC1C00243004 /* NuvilabUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NuvilabUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		D4DD13432CFDEC1800243004 /* Nuvilab */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Nuvilab;
-			sourceTree = "<group>";
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		D4DD13B32CFE03E300243004 /* Exceptions for "Nuvilab" folder in "Nuvilab" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = D4DD13402CFDEC1800243004 /* Nuvilab */;
 		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
 		D4DD13542CFDEC1C00243004 /* NuvilabTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = NuvilabTests;
@@ -45,6 +54,14 @@
 			path = NuvilabUITests;
 			sourceTree = "<group>";
 		};
+		D4DD137E2CFDEF3D00243004 /* Nuvilab */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				D4DD13B32CFE03E300243004 /* Exceptions for "Nuvilab" folder in "Nuvilab" target */,
+			);
+			path = Nuvilab;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4DD13882CFDEF9200243004 /* Moya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,9 +93,10 @@
 		D4DD13382CFDEC1800243004 = {
 			isa = PBXGroup;
 			children = (
-				D4DD13432CFDEC1800243004 /* Nuvilab */,
+				D4DD137E2CFDEF3D00243004 /* Nuvilab */,
 				D4DD13542CFDEC1C00243004 /* NuvilabTests */,
 				D4DD135E2CFDEC1C00243004 /* NuvilabUITests */,
+				D4DD13862CFDEF9200243004 /* Frameworks */,
 				D4DD13422CFDEC1800243004 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +109,13 @@
 				D4DD135B2CFDEC1C00243004 /* NuvilabUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		D4DD13862CFDEF9200243004 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -108,10 +134,11 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				D4DD13432CFDEC1800243004 /* Nuvilab */,
+				D4DD137E2CFDEF3D00243004 /* Nuvilab */,
 			);
 			name = Nuvilab;
 			packageProductDependencies = (
+				D4DD13872CFDEF9200243004 /* Moya */,
 			);
 			productName = Nuvilab;
 			productReference = D4DD13412CFDEC1800243004 /* Nuvilab.app */;
@@ -195,6 +222,9 @@
 			);
 			mainGroup = D4DD13382CFDEC1800243004;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				D4DD13852CFDEF7C00243004 /* XCRemoteSwiftPackageReference "Moya" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = D4DD13422CFDEC1800243004 /* Products */;
 			projectDirPath = "";
@@ -399,11 +429,13 @@
 				DEVELOPMENT_TEAM = 547KV58FND;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Nuvilab/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -428,11 +460,13 @@
 				DEVELOPMENT_TEAM = 547KV58FND;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Nuvilab/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -558,6 +592,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D4DD13852CFDEF7C00243004 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D4DD13872CFDEF9200243004 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D4DD13852CFDEF7C00243004 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D4DD13392CFDEC1800243004 /* Project object */;
 }
