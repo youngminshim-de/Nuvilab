@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		D4DD13522CFDEC1C00243004 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D4DD13392CFDEC1800243004 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4DD13402CFDEC1800243004;
+			remoteInfo = Nuvilab;
+		};
+		D4DD135C2CFDEC1C00243004 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D4DD13392CFDEC1800243004 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4DD13402CFDEC1800243004;
+			remoteInfo = Nuvilab;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D4DD13412CFDEC1800243004 /* Nuvilab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nuvilab.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4DD13512CFDEC1C00243004 /* NuvilabTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NuvilabTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4DD135B2CFDEC1C00243004 /* NuvilabUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NuvilabUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		D4DD13432CFDEC1800243004 /* Nuvilab */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Nuvilab;
+			sourceTree = "<group>";
+		};
+		D4DD13542CFDEC1C00243004 /* NuvilabTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = NuvilabTests;
+			sourceTree = "<group>";
+		};
+		D4DD135E2CFDEC1C00243004 /* NuvilabUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = NuvilabUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D4DD133E2CFDEC1800243004 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4DD134E2CFDEC1C00243004 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4DD13582CFDEC1C00243004 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D4DD13382CFDEC1800243004 = {
+			isa = PBXGroup;
+			children = (
+				D4DD13432CFDEC1800243004 /* Nuvilab */,
+				D4DD13542CFDEC1C00243004 /* NuvilabTests */,
+				D4DD135E2CFDEC1C00243004 /* NuvilabUITests */,
+				D4DD13422CFDEC1800243004 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D4DD13422CFDEC1800243004 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D4DD13412CFDEC1800243004 /* Nuvilab.app */,
+				D4DD13512CFDEC1C00243004 /* NuvilabTests.xctest */,
+				D4DD135B2CFDEC1C00243004 /* NuvilabUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D4DD13402CFDEC1800243004 /* Nuvilab */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4DD13652CFDEC1C00243004 /* Build configuration list for PBXNativeTarget "Nuvilab" */;
+			buildPhases = (
+				D4DD133D2CFDEC1800243004 /* Sources */,
+				D4DD133E2CFDEC1800243004 /* Frameworks */,
+				D4DD133F2CFDEC1800243004 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				D4DD13432CFDEC1800243004 /* Nuvilab */,
+			);
+			name = Nuvilab;
+			packageProductDependencies = (
+			);
+			productName = Nuvilab;
+			productReference = D4DD13412CFDEC1800243004 /* Nuvilab.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D4DD13502CFDEC1C00243004 /* NuvilabTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4DD13682CFDEC1C00243004 /* Build configuration list for PBXNativeTarget "NuvilabTests" */;
+			buildPhases = (
+				D4DD134D2CFDEC1C00243004 /* Sources */,
+				D4DD134E2CFDEC1C00243004 /* Frameworks */,
+				D4DD134F2CFDEC1C00243004 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D4DD13532CFDEC1C00243004 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				D4DD13542CFDEC1C00243004 /* NuvilabTests */,
+			);
+			name = NuvilabTests;
+			packageProductDependencies = (
+			);
+			productName = NuvilabTests;
+			productReference = D4DD13512CFDEC1C00243004 /* NuvilabTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D4DD135A2CFDEC1C00243004 /* NuvilabUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4DD136B2CFDEC1C00243004 /* Build configuration list for PBXNativeTarget "NuvilabUITests" */;
+			buildPhases = (
+				D4DD13572CFDEC1C00243004 /* Sources */,
+				D4DD13582CFDEC1C00243004 /* Frameworks */,
+				D4DD13592CFDEC1C00243004 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D4DD135D2CFDEC1C00243004 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				D4DD135E2CFDEC1C00243004 /* NuvilabUITests */,
+			);
+			name = NuvilabUITests;
+			packageProductDependencies = (
+			);
+			productName = NuvilabUITests;
+			productReference = D4DD135B2CFDEC1C00243004 /* NuvilabUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D4DD13392CFDEC1800243004 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1610;
+				LastUpgradeCheck = 1610;
+				TargetAttributes = {
+					D4DD13402CFDEC1800243004 = {
+						CreatedOnToolsVersion = 16.1;
+					};
+					D4DD13502CFDEC1C00243004 = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = D4DD13402CFDEC1800243004;
+					};
+					D4DD135A2CFDEC1C00243004 = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = D4DD13402CFDEC1800243004;
+					};
+				};
+			};
+			buildConfigurationList = D4DD133C2CFDEC1800243004 /* Build configuration list for PBXProject "Nuvilab" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D4DD13382CFDEC1800243004;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = D4DD13422CFDEC1800243004 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D4DD13402CFDEC1800243004 /* Nuvilab */,
+				D4DD13502CFDEC1C00243004 /* NuvilabTests */,
+				D4DD135A2CFDEC1C00243004 /* NuvilabUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D4DD133F2CFDEC1800243004 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4DD134F2CFDEC1C00243004 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4DD13592CFDEC1C00243004 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D4DD133D2CFDEC1800243004 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4DD134D2CFDEC1C00243004 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4DD13572CFDEC1C00243004 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D4DD13532CFDEC1C00243004 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D4DD13402CFDEC1800243004 /* Nuvilab */;
+			targetProxy = D4DD13522CFDEC1C00243004 /* PBXContainerItemProxy */;
+		};
+		D4DD135D2CFDEC1C00243004 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D4DD13402CFDEC1800243004 /* Nuvilab */;
+			targetProxy = D4DD135C2CFDEC1C00243004 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D4DD13632CFDEC1C00243004 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D4DD13642CFDEC1C00243004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D4DD13662CFDEC1C00243004 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Nuvilab/Preview Content\"";
+				DEVELOPMENT_TEAM = 547KV58FND;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Nuvilab;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D4DD13672CFDEC1C00243004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Nuvilab/Preview Content\"";
+				DEVELOPMENT_TEAM = 547KV58FND;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Nuvilab;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D4DD13692CFDEC1C00243004 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 547KV58FND;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.NuvilabTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nuvilab.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Nuvilab";
+			};
+			name = Debug;
+		};
+		D4DD136A2CFDEC1C00243004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 547KV58FND;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.NuvilabTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nuvilab.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Nuvilab";
+			};
+			name = Release;
+		};
+		D4DD136C2CFDEC1C00243004 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 547KV58FND;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.NuvilabUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Nuvilab;
+			};
+			name = Debug;
+		};
+		D4DD136D2CFDEC1C00243004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 547KV58FND;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.NuvilabUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Nuvilab;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D4DD133C2CFDEC1800243004 /* Build configuration list for PBXProject "Nuvilab" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4DD13632CFDEC1C00243004 /* Debug */,
+				D4DD13642CFDEC1C00243004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4DD13652CFDEC1C00243004 /* Build configuration list for PBXNativeTarget "Nuvilab" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4DD13662CFDEC1C00243004 /* Debug */,
+				D4DD13672CFDEC1C00243004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4DD13682CFDEC1C00243004 /* Build configuration list for PBXNativeTarget "NuvilabTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4DD13692CFDEC1C00243004 /* Debug */,
+				D4DD136A2CFDEC1C00243004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4DD136B2CFDEC1C00243004 /* Build configuration list for PBXNativeTarget "NuvilabUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4DD136C2CFDEC1C00243004 /* Debug */,
+				D4DD136D2CFDEC1C00243004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D4DD13392CFDEC1800243004 /* Project object */;
+}
