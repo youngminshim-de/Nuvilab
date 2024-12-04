@@ -26,7 +26,7 @@ extension HomeViewModel {
             bookList = items
             persistenceManager.saveBooks(bookList)
         } catch (let error) {
-            
+            fetchFromCoreData()
         }
     }
     
@@ -47,7 +47,7 @@ extension HomeViewModel {
             
             if bookList.count >= data.totalCount ?? Int.max { isLastPage = true }
         } catch (let error) {
-            
+            fetchFromCoreData()
         }
     }
 }
