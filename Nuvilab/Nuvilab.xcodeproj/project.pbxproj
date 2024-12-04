@@ -33,32 +33,9 @@
 		D4DD135B2CFDEC1C00243004 /* NuvilabUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NuvilabUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		D4DD13B32CFE03E300243004 /* Exceptions for "Nuvilab" folder in "Nuvilab" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = D4DD13402CFDEC1800243004 /* Nuvilab */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		D4DD13542CFDEC1C00243004 /* NuvilabTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = NuvilabTests;
-			sourceTree = "<group>";
-		};
-		D4DD135E2CFDEC1C00243004 /* NuvilabUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = NuvilabUITests;
-			sourceTree = "<group>";
-		};
 		D4DD137E2CFDEF3D00243004 /* Nuvilab */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				D4DD13B32CFE03E300243004 /* Exceptions for "Nuvilab" folder in "Nuvilab" target */,
-			);
 			path = Nuvilab;
 			sourceTree = "<group>";
 		};
@@ -94,8 +71,6 @@
 			isa = PBXGroup;
 			children = (
 				D4DD137E2CFDEF3D00243004 /* Nuvilab */,
-				D4DD13542CFDEC1C00243004 /* NuvilabTests */,
-				D4DD135E2CFDEC1C00243004 /* NuvilabUITests */,
 				D4DD13862CFDEF9200243004 /* Frameworks */,
 				D4DD13422CFDEC1800243004 /* Products */,
 			);
@@ -157,9 +132,6 @@
 			dependencies = (
 				D4DD13532CFDEC1C00243004 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				D4DD13542CFDEC1C00243004 /* NuvilabTests */,
-			);
 			name = NuvilabTests;
 			packageProductDependencies = (
 			);
@@ -179,9 +151,6 @@
 			);
 			dependencies = (
 				D4DD135D2CFDEC1C00243004 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				D4DD135E2CFDEC1C00243004 /* NuvilabUITests */,
 			);
 			name = NuvilabUITests;
 			packageProductDependencies = (
@@ -429,7 +398,7 @@
 				DEVELOPMENT_TEAM = 547KV58FND;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Nuvilab/Info.plist;
+				INFOPLIST_FILE = Nuvilab/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -460,7 +429,7 @@
 				DEVELOPMENT_TEAM = 547KV58FND;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Nuvilab/Info.plist;
+				INFOPLIST_FILE = Nuvilab/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

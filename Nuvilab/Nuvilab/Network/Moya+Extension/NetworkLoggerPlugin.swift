@@ -8,18 +8,6 @@
 import Foundation
 import Moya
 
-extension Data {
-
-  var prettyJSON: String? {
-    guard let object = try? JSONSerialization.jsonObject(with: self, options: []),
-          let data = try? JSONSerialization.data(withJSONObject: object, options: [.withoutEscapingSlashes, .sortedKeys, .prettyPrinted]),
-          let prettyPrintedString = String(data: data, encoding: .utf8)
-    else { return nil }
-
-    return prettyPrintedString
-  }
-}
-
 final class NetworkLoggerPlugin: PluginType {
     var startDate: Date?
 
@@ -117,4 +105,3 @@ extension NetworkLoggerPlugin {
         return data
     }
 }
-
