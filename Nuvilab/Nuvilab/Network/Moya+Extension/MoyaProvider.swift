@@ -10,7 +10,8 @@ import Moya
 
 extension MoyaProvider {
     static func create<T: TargetType>() -> MoyaProvider<T> {
-        return MoyaProvider<T>(plugins: [NetworkLoggerPlugin()])
+        return MoyaProvider<T>(session: MoyaProvider.CustomSession,
+                               plugins: [NetworkLoggerPlugin()])
     }
     
     static func createForMock<T: TargetType>(statusCode: Int = 200) -> MoyaProvider<T> {
@@ -24,6 +25,7 @@ extension MoyaProvider {
         
         return MoyaProvider<T>(endpointClosure: endpointClosure,
                                stubClosure: MoyaProvider<T>.immediatelyStub,
+                               session: MoyaProvider.defaultAlamofireSession(),
                                plugins: [NetworkLoggerPlugin()])
     }
     
@@ -57,3 +59,14 @@ extension MoyaProvider {
     }
 }
 
+private extension MoyaProvider {
+    static var CustomSession: Session {
+        let session = URLSessionConfiguration.default
+        session.headers = .default
+        session.timeoutIntervalForRequest = 10
+        session.requestCachePolicy = .reloadIgnoringLocalCacheData
+        session.urlCache = nil
+
+        return Session(configuration: session, interceptor: Interceptor())
+    }
+}
