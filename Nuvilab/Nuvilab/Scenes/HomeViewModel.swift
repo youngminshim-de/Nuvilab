@@ -12,7 +12,7 @@ final class HomeViewModel: ObservableObject {
     /// Published
     @Published var contentState: ContentState = .loading
     @Published var searchText: String = ""
-    
+    @Published var apiError: SearchBookError?
     /// CoreData
     let persistenceManager = PersistenceManager.shared
     

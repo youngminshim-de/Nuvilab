@@ -18,6 +18,7 @@ struct HomeView: View {
         .environmentObject(viewModel)
         .onAppearOnce { viewModel.onAppearOnce() }
         .searchable(text: $viewModel.searchText, prompt: "도서명 검색")
+        .alert(with: $viewModel.apiError)
     }
     
     @ViewBuilder

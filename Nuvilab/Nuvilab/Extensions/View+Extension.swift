@@ -12,10 +12,13 @@ extension View {
     func onAppearOnce(perform action: (() -> Void)? = nil) -> some View {
         self.modifier(ViewAppearOnceModifier(action: action))
     }
+    
+    func alert(with error: Binding<SearchBookError?>) -> some View {
+        self.modifier(ErrorAlertModifier(error: error))
+    }
 }
 
 // MARK: Modifier
-
 struct ViewAppearOnceModifier: ViewModifier {
     @State private var onAppearOnce = false
     let action: (() -> Void)?
@@ -27,5 +30,28 @@ struct ViewAppearOnceModifier: ViewModifier {
                 action?()
             }
         }
+    }
+}
+
+struct ErrorAlertModifier: ViewModifier {
+    @Binding var error: SearchBookError?
+    
+    var isPresented: Binding<Bool> {
+        Binding {
+            error != nil
+        } set: { _ in
+            error = nil
+        }
+    }
+    
+    func body(content: Content) -> some View {
+        content
+            .alert("",
+                   isPresented: isPresented,
+                   presenting: error) { error in
+                
+            } message: { error in
+                Text(error.displayErrorMessage)
+            }
     }
 }

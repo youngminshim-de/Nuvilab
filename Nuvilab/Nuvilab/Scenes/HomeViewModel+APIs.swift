@@ -26,6 +26,11 @@ extension HomeViewModel {
             bookList = items
             persistenceManager.saveBooks(bookList)
         } catch (let error) {
+            guard let error = error as? SearchBookError else {
+                apiError = .unknown
+                return
+            }
+            apiError = error
             fetchFromCoreData()
         }
     }
@@ -47,6 +52,11 @@ extension HomeViewModel {
             
             if bookList.count >= data.totalCount ?? Int.max { isLastPage = true }
         } catch (let error) {
+            guard let error = error as? SearchBookError else {
+                apiError = .unknown
+                return
+            }
+            apiError = error
             fetchFromCoreData()
         }
     }
