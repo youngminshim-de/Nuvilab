@@ -17,30 +17,29 @@ struct BookResponseModel: Codable {
 }
 
 struct BookInformationModel: Codable, Identifiable {
-    let id = UUID()
-    let no: Int?
+    var id: Int
     let genre: String
     let bookName: String
     let authorName: String
     let publisher: String
     let publicationYear: String
     let isLoaned: Bool
-    let description: String
+    let descriptions: String
 
     enum CodingKeys: String, CodingKey {
-        case no
+        case id = "no"
         case genre = "gnr"
         case bookName = "ebk_nm"
         case authorName = "aut_nm"
         case publisher = "pblshr"
         case publicationYear = "pblsh_ymd"
         case isLoaned = "loan_avlbl_yn"
-        case description = "cn_intro"
+        case descriptions = "cn_intro"
     }
     
     init(from decoder: any Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        self.no = try container.decodeIfPresent(Int.self, forKey: .no)
+        self.id = (try? container.decodeIfPresent(Int.self, forKey: .id)) ?? -1
         self.genre = (try? container.decode(String.self, forKey: .genre)) ?? ""
         self.bookName = (try? container.decode(String.self, forKey: .bookName)) ?? ""
         self.authorName = (try? container.decode(String.self, forKey: .authorName)) ?? ""
@@ -50,6 +49,17 @@ struct BookInformationModel: Codable, Identifiable {
         let _isLoaned = (try? container.decode(String.self, forKey: .isLoaned)) ?? "Y"
         self.isLoaned = _isLoaned == "Y" ? true : false
         
-        self.description = (try? container.decode(String.self, forKey: .description)) ?? ""
+        self.descriptions = (try? container.decode(String.self, forKey: .descriptions)) ?? ""
+    }
+    // For CoreData
+    init(entity: BookInformation) {
+        self.id = Int(entity.id)
+        self.genre = entity.genre ?? ""
+        self.bookName = entity.bookName ?? ""
+        self.authorName = entity.authorName ?? ""
+        self.publisher = entity.publisher ?? ""
+        self.publicationYear = entity.publicationYear ?? ""
+        self.isLoaned = entity.isLoaned
+        self.descriptions = entity.descriptions ?? ""
     }
 }
