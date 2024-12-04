@@ -6,11 +6,22 @@
 //
 
 import Foundation
+import CoreData
 
 final class HomeViewModel: ObservableObject {
+    /// Published
     @Published var contentState: ContentState = .loading
     @Published var searchText: String = ""
     
+    /// CoreData
+    let persistenceManager = PersistenceManager.shared
+    
+    /// For API
+    let searchBookAPI: SearchBookAPI
+    var page: Int = 1
+    var isLastPage: Bool = false
+    
+    /// For UI
     var bookList: [BookInformationModel] = []
     var filteredBookList: [BookInformationModel] {
         guard !searchText.isEmpty else { return bookList }
@@ -20,73 +31,55 @@ final class HomeViewModel: ObservableObject {
         }
     }
     
-    var page: Int = 1
-    var isLastPage: Bool = false
-    
-    private var searchBookAPI: SearchBookAPI
-    
     init(searchBookAPI: SearchBookAPI) {
         self.searchBookAPI = searchBookAPI
     }
     
-    func onAppearOnce() {
-        fetchInitial()
+    func onAppearOnce() { fetchData() }
+    
+    private func fetchData() {
+        if NetworkConnectionManager.shared.isConnected {
+            Task { await fetchFromAPI() }
+        } else {
+            fetchFromCoreData()
+        }
     }
     
-    func fetchInitial() {
-        Task { await fetchBookList() }
-    }
-    
-    func fetchMore(with book: BookInformationModel) {
-        guard !isLastPage,
-              book.id == bookList.last?.id else { return }
-        page += 1
-        Task { await fetchMoreList() }
-    }
-}
-
-// HomeViewModel + APIs
-@MainActor
-extension HomeViewModel {
-    func fetchBookList() async {
+    func fetchFromCoreData() {
         contentState = .loading
         
         defer {
             if contentState != .empty { contentState = .fetchFinished }
         }
         
-        do {
-            guard let data = try await searchBookAPI.bookList(pageNo: page),
-                let items = data.items else {
-                contentState = .empty
-                return
-            }
-            bookList = items
-            if bookList.count >= data.totalCount ?? Int.max { isLastPage = true }
-        } catch (let error) {
-            print(error)
+        let offset = bookList.count
+        let totalCount = persistenceManager.coreDataCount()
+        
+        bookList += persistenceManager.fetchCoreData(fetchOffset: offset)
+        
+        if bookList.count >= (totalCount ?? Int.max) { isLastPage = true }
+        
+        guard !bookList.isEmpty else {
+            contentState = .empty
+            return
         }
     }
     
-    func fetchMoreList() async {
-        contentState = .fetchMore
+    func fetchMore(with book: BookInformationModel) {
+        guard !isLastPage,
+              book.id == bookList.last?.id else { return }
         
-        defer { contentState = .fetchFinished }
+        page += 1
         
-        do {
-            guard let data = try await searchBookAPI.bookList(pageNo: page),
-                  let items = data.items else {
-                isLastPage = true
-                return
-            }
-            
-            bookList += items
-        } catch (let error) {
-            print(error)
+        if NetworkConnectionManager.shared.isConnected {
+            Task { await fetchMoreFromAPI() }
+        } else {
+            fetchFromCoreData()
         }
     }
 }
 
+// MARK: ContentState
 extension HomeViewModel {
     enum ContentState {
         case loading
