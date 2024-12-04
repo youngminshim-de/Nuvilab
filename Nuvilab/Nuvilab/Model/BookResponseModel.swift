@@ -6,11 +6,15 @@
 //
 
 import Foundation
-
+/// 이슈 1: URLSession을 사용한 API 요청 시 데이터 변환 오류 발생
+/// 해결방법
+/// 1. 최우선적으로 앱이 비정상종료 되지 않도록 한다. (프로퍼티 Optional 처리, Default 값 설정 등)
+/// 2. UI에 있어 크리티컬한 필드가 아니라면 해당부분을 제외하고, UI를 그린다.
+/// 3. 크리티컬한 필드라면 오류메세지를 보여준다.
 struct BookResponseModel: Codable {
     let resultCode: Int
     let resultMsg: String
-    let numOfRows: Int?
+    let numOfRows: Int? /// Optional 처리
     let pageNo: Int?
     let totalCount: Int?
     let items: [BookInformationModel]?
@@ -39,7 +43,7 @@ struct BookInformationModel: Codable, Identifiable {
     
     init(from decoder: any Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        self.id = (try? container.decodeIfPresent(Int.self, forKey: .id)) ?? -1
+        self.id = (try? container.decodeIfPresent(Int.self, forKey: .id)) ?? -1 /// Default 값 설정
         self.genre = (try? container.decode(String.self, forKey: .genre)) ?? ""
         self.bookName = (try? container.decode(String.self, forKey: .bookName)) ?? ""
         self.authorName = (try? container.decode(String.self, forKey: .authorName)) ?? ""
