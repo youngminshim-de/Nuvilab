@@ -29,8 +29,13 @@ final class PersistenceManager {
     func fetchCoreData(fetchLimit: Int = 30, fetchOffset: Int) -> [BookInformationModel] {
         let request = BookInformation.fetchRequest()
         
+        /// For Pagination
         request.fetchLimit = fetchLimit
         request.fetchOffset = fetchOffset
+        
+        /// For Sorting
+        let sortDescriptor = NSSortDescriptor(key: "id", ascending: true)
+        request.sortDescriptors = [sortDescriptor]
         
         do {
             let bookInformation = try context.fetch(request)
@@ -39,6 +44,16 @@ final class PersistenceManager {
             }
         } catch {
             return []
+        }
+    }
+    
+    func coreDataCount() -> Int? {
+        let request = BookInformation.fetchRequest()
+        do {
+            let totalCount = try context.count(for: request)
+            return totalCount
+        } catch {
+            return nil
         }
     }
     
