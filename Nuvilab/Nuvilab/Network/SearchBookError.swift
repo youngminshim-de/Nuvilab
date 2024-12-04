@@ -28,7 +28,7 @@ enum SearchBookError: LocalizedError {
     
     /// 에러의 내용은 이용자에게 보여줄 필요가 없을 것 같아 모든에러를 같은 메세지로 처리한다.
     var displayErrorMessage: String {
-        return "오류가 발생하였습니다. 잠시 후 다시 시도해주세요"
+        return "오류가 발생하였습니다. 오프라인 모드로 전환됩니다."
     }
     
     var statusCode: Int? {
