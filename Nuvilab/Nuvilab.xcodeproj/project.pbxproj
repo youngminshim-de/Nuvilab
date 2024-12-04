@@ -33,9 +33,22 @@
 		D4DD135B2CFDEC1C00243004 /* NuvilabUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NuvilabUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		D4DD14DD2D0046F100243004 /* Exceptions for "Nuvilab" folder in "Nuvilab" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				SupportingFiles/Info.plist,
+			);
+			target = D4DD13402CFDEC1800243004 /* Nuvilab */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		D4DD137E2CFDEF3D00243004 /* Nuvilab */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				D4DD14DD2D0046F100243004 /* Exceptions for "Nuvilab" folder in "Nuvilab" target */,
+			);
 			path = Nuvilab;
 			sourceTree = "<group>";
 		};
